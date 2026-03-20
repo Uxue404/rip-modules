@@ -2,7 +2,7 @@ import {Box, Text} from 'ink'
 import figlet from "figlet";
 
 const Banner = () => {
-    const ascii = figlet.textSync("rip-module", { font: "Coder mini" });
+    const ascii = figlet.textSync("rip-modules", { font: "Coder mini" });
     const lines = ascii.split("\n");
 
     return (
