@@ -1,11 +1,12 @@
 {
   "name": "rip-modules",
   "type": "module",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Delete all node_modules folders from your projects",
   "private": false,
   "files": [
-    "dist"
+    "dist",
+    "fonts"
   ],
   "bin": {
     "rip-modules": "dist/cli.js"

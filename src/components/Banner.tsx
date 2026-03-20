@@ -9,7 +9,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const Banner = () => {
     const fontContent = readFileSync(
-        path.join(__dirname, "fonts", "Coder mini.flf"),
+        path.join(__dirname, '..', "fonts", "Coder mini.flf"),
         "utf8"
     );
     // @ts-ignore
