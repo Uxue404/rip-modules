@@ -3,25 +3,39 @@
 > Delete all `node_modules` folders fast and easy.
 
 ## Install
-```bash
-npm install -g rip-module
-```
+
+> 🚧 Coming soon on npm!
 
 ## Usage
-```bash
-# Scan current directory
-rip-module
 
-# Scan specific directory
-rip-module /path/to/projects
+> 🚧 Coming soon!
+
+## Development
+```bash
+# Clone the repo
+git clone https://github.com/uchue/rip-module
+
+# Install dependencies
+bun install
+
+# Run in dev mode
+bun run dev
 ```
+
+## Controls
+
+| Key | Action |
+|-----|--------|
+| `↑ ↓` | Navigate |
+| `space` | Select |
+| `enter` | Delete |
 
 ## Features
 
 - 🔍 Scans recursively
 - 📊 Shows size of each folder
 - ✅ Select which ones to delete
-- ⚡ Built with Bun
+- ⚡ Built with Bun + Ink
 
 ## Contributors
 
