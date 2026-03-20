@@ -1,8 +1,17 @@
 {
   "name": "rip-module",
-  "module": "index.ts",
   "type": "module",
-  "private": true,
+  "version": "0.0.1",
+  "description": "Delete all node_modules folders from your projects",
+  "private": false,
+  "files": ["dist"],
+  "bin": {
+    "rip-modules": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "bun build ./src/cli.ts --outdir ./dist --target node",
+    "prepublishOnly": "bun run build"
+  },
   "devDependencies": {
     "@types/bun": "latest",
     "@types/figlet": "^1.7.0",
