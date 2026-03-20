@@ -6,11 +6,12 @@
   "private": false,
   "files": ["dist"],
   "bin": {
-    "rip-modules": "./dist/cli.js"
+    "rip-modules": "dist/cli.js"
   },
   "scripts": {
-    "build": "bun build ./src/cli.ts --outdir ./dist --target node",
-    "prepublishOnly": "bun run build"
+    "build": "bun run clean && bun build ./src/cli.ts --outdir ./dist --target node && cp -r ./fonts ./dist/fonts",
+    "prepublishOnly": "bun run build",
+    "clean" : "rm -rf ./dist"
   },
   "devDependencies": {
     "@types/bun": "latest",
