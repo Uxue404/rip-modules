@@ -1,7 +1,20 @@
 import {Box, Text} from 'ink'
 import figlet from "figlet";
+import { readFileSync } from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
 
 const Banner = () => {
+    const fontContent = readFileSync(
+        path.join(__dirname, "fonts", "Coder mini.flf"),
+        "utf8"
+    );
+    // @ts-ignore
+    figlet.loadFontSync("Coder mini", fontContent);
+
     const ascii = figlet.textSync("rip-modules", { font: "Coder mini" });
     const lines = ascii.split("\n");
 
