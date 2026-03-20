@@ -1,7 +1,7 @@
 {
   "name": "rip-modules",
   "type": "module",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Delete all node_modules folders from your projects",
   "private": false,
   "files": [
