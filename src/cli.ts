@@ -6,6 +6,10 @@ import App from "./components/App.tsx";
 import { Command} from "commander";
 
 const program = new Command();
+process.on('exit', () => {
+    process.stdout.write('\x1Bc');
+    console.log('\n✨ Thanks for using rip-modules! Happy coding 🚀');
+});
 
 program
     .name('rip-modules')

@@ -1,7 +1,7 @@
 {
   "name": "rip-modules",
   "type": "module",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Delete all node_modules folders from your projects",
   "private": false,
   "files": [
@@ -12,8 +12,8 @@
     "rip-modules": "dist/cli.js"
   },
   "scripts": {
-    "build": "bun run clean && bun build ./src/cli.ts --outdir ./dist --target node --external react-devtools-core && cp -r ./fonts ./dist/fonts",
-    "prepublishOnly": "bun run build",
+    "dev": "bun run build && node dist/cli.js",
+    "build": "bun run clean && bun build ./src/cli.ts --outdir ./dist --target node && cp -r ./fonts ./dist/fonts",
     "clean": "rm -rf ./dist"
   },
   "devDependencies": {
