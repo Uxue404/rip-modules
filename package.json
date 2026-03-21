@@ -20,7 +20,8 @@
     "@types/bun": "latest",
     "@types/figlet": "^1.7.0",
     "@types/ink-spinner": "^3.0.5",
-    "@types/react": "^19.2.14"
+    "@types/react": "^19.2.14",
+    "react-devtools-core": "^7.0.1"
   },
   "peerDependencies": {
     "typescript": "^5"
