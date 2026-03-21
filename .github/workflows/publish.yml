@@ -23,8 +23,6 @@ jobs:
 
       - name: Build
         run: bun run build
-        env:
-          NODE_ENV: production
 
       - name: Setup Node
         uses: actions/setup-node@v4
