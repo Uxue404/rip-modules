@@ -12,7 +12,7 @@
     "rip-modules": "dist/cli.js"
   },
   "scripts": {
-    "build": "bun run clean && bun build ./src/cli.ts --outdir ./dist --target node && cp -r ./fonts ./dist/fonts",
+    "build": "bun run clean && bun build ./src/cli.ts --outdir ./dist --target node --define 'process.env.NODE_ENV=\"production\"' && cp -r ./fonts ./dist/fonts",
     "prepublishOnly": "bun run build",
     "clean": "rm -rf ./dist"
   },
